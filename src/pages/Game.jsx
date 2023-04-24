@@ -197,7 +197,7 @@ class Game extends Component {
           )}
         </section>
         <section>
-          <h1>{timer !== 0 ? timer : 'O tempo acabou'}</h1>
+          <h1 className="timer">{timer !== 0 ? timer : 'O tempo acabou'}</h1>
         </section>
       </div>
     );

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getEmail } from '../redux/actions/action';
 import './Login.css';
+import logo from '../images/logo.svg';
 
 // const TOKEN_EXPIRED = 3;
 
@@ -60,6 +61,7 @@ class Login extends Component {
     const { email, name, loading } = this.state;
     return (
       <div className="login-container">
+        <img src={ logo } alt="logo" />
         <form className="form" onSubmit={ this.handleSubmit }>
           <label className="label" htmlFor="">
             Email
