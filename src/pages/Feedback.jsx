@@ -4,6 +4,7 @@ import md5 from 'crypto-js/md5';
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import { resetUser } from '../redux/actions/action';
+import './Feedback.css';
 
 class Feedback extends Component {
   userHitAndInfo = () => {
@@ -44,7 +45,7 @@ class Feedback extends Component {
     const MIN_ASSERTIONS = 3;
     const { assertions, score } = this.props;
     return (
-      <div>
+      <div className="feedback-container">
         <Header />
         <h1>Feedbacks</h1>
         <p data-testid="feedback-total-score">{score}</p>
