@@ -19,8 +19,8 @@ class Ranking extends Component {
     const { history } = this.props;
     const { rankingLS } = this.state;
     return (
-      <div className="cointainer-page-ranking">
-        <h1 data-testid="ranking-title">RANKING</h1>
+      <div className="container-page-ranking">
+        <h1 data-testid="ranking-title" className="ranking-title">RANKING</h1>
 
         <div className="container-users-ranking">
           {
