@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Ranking.css';
 
+const magicNumber = 5;
+
 class Ranking extends Component {
   state = {
     rankingLS: [],
@@ -24,7 +26,7 @@ class Ranking extends Component {
 
         <div className="container-users-ranking">
           {
-            rankingLS.map((user, index) => (
+            rankingLS.slice(0, magicNumber).map((user, index) => (
               <div
                 key={ index }
                 className="container-user"

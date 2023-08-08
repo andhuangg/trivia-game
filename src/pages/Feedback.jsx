@@ -47,29 +47,30 @@ class Feedback extends Component {
     return (
       <div className="feedback-container">
         <Header />
-        <h1>Feedbacks</h1>
-        <p data-testid="feedback-total-score">{score}</p>
-        <p data-testid="feedback-total-question">{assertions}</p>
-        <p data-testid="feedback-text">
-          {
-            assertions < MIN_ASSERTIONS ? 'Could be better...' : 'Well Done!'
-          }
-
-        </p>
-        <button
-          data-testid="btn-ranking"
-          onClick={ (e) => this.handleClick(e) }
-          value="ranking"
-        >
-          VER RANKING
-        </button>
-        <button
-          data-testid="btn-play-again"
-          onClick={ (e) => this.handleClick(e) }
-          value="play-again"
-        >
-          Play Again
-        </button>
+        <div className="feedback-card">
+          <h1>Feedbacks</h1>
+          <p data-testid="feedback-total-score">{`Score: ${score}`}</p>
+          <p data-testid="feedback-total-question">{`Assertions: ${assertions}`}</p>
+          <p data-testid="feedback-text">
+            {
+              assertions < MIN_ASSERTIONS ? 'Could be better...' : 'Well Done!'
+            }
+          </p>
+          <button
+            data-testid="btn-ranking"
+            onClick={ (e) => this.handleClick(e) }
+            value="ranking"
+          >
+            VER RANKING
+          </button>
+          <button
+            data-testid="btn-play-again"
+            onClick={ (e) => this.handleClick(e) }
+            value="play-again"
+          >
+            Play Again
+          </button>
+        </div>
       </div>
     );
   }

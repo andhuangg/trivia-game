@@ -13,7 +13,7 @@ class Header extends Component {
     const emailToLink = md5(email).toString();
 
     return (
-      <header>
+      <header className="header">
         <img
           src={ `https://www.gravatar.com/avatar/${emailToLink}` }
           alt="userIMG"
@@ -21,7 +21,7 @@ class Header extends Component {
         />
         <div className="user-info">
           <p data-testid="header-player-name">{name}</p>
-          <p data-testid="header-score">{score}</p>
+          <p data-testid="header-score">{`Score: ${score}`}</p>
         </div>
       </header>
     );

@@ -3,34 +3,55 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
+  height: 100vh;
+  background-image: url('../images/background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  color: white;
 }
 
-h1 {
-  font-size: 36px;
-  color: white;
+.feedback-container .feedback-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  width: 80%;
+  max-width: 500px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 2px solid white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  margin: 8px;
+}
+
+.feedback-container h1 {
   margin-bottom: 20px;
 }
 
-p {
+.feedback-container p {
+  margin-bottom: 10px;
   font-size: 18px;
-  color: white;
-  margin: 8px 0;
+  text-align: center;
 }
 
-button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 8px;
+.feedback-container button {
   padding: 10px 20px;
-  font-size: 18px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
   cursor: pointer;
-  margin: 10px;
   transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #0056b3;
+.feedback-container button:hover {
+  background-color: #45a049;
+}
+
+.feedback-container button:not(:last-child) {
+  margin-bottom: 10px;
 }

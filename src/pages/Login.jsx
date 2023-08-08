@@ -5,8 +5,6 @@ import { getEmail } from '../redux/actions/action';
 import './Login.css';
 import logo from '../images/logo.svg';
 
-// const TOKEN_EXPIRED = 3;
-
 class Login extends Component {
   state = {
     email: '',
@@ -39,22 +37,6 @@ class Login extends Component {
       localStorage.removeItem('token');
       history.push('/');
     }
-    // dispatch(getEmail(email, name));
-    // const response = await fetch('https://opentdb.com/api_token.php?command=request');
-    // const data = await response.json();
-
-    // if (data.response_code === TOKEN_EXPIRED) {
-    //   localStorage.removeItem('token');
-    //   history.push('/');
-    // } else {
-    //   localStorage.setItem('token', data.token);
-    //   history.push('/game');
-    // }
-  };
-
-  handleConfigButton = () => {
-    const { history } = this.props;
-    history.push('/config');
   };
 
   render() {
@@ -85,14 +67,6 @@ class Login extends Component {
               data-testid="input-player-name"
             />
           </label>
-          <button
-            className="button btn-settings"
-            type="button"
-            data-testid="btn-settings"
-            onClick={ this.handleConfigButton }
-          >
-            Configuração
-          </button>
           <button
             className="button btn-play"
             type="submit"
