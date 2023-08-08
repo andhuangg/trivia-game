@@ -1,10 +1,16 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Trivia Game
+Trivia Game é um jogo de perguntas e respostas, feito com a API Trivia. O jogo permite que os participantes se autentiquem e desafiem seus conhecimentos em variados temas, obtendo feedback personalizado do seu desempenho.
+O projeto foi desenvolvido em grupo com [Reinaldo Coelho](https://github.com/coelhoreinaldo) e [Gabriel Rodrigues](https://github.com/gabrielr99). A estilização das páginas foi feita de forma individual após a entrega do projeto.
+
+## Tecnologias Utilizadas
+- React.js
+- Javascript
+- Componentes de classe
+- Redux
+- Trivia API
+
+## Como Instalar e Rodar o Projeto
+Para instalar e rodar este projeto localmente, siga os passos abaixo:
+- Clone o repositório: `git clone git@github.com:andhuangg/trivia-game.git`
+- Instale as dependências: `npm install`
+- Para rodar o projeto localmente: `npm start`
