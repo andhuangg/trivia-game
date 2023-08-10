@@ -9,8 +9,8 @@ O projeto foi desenvolvido em grupo com [Reinaldo Coelho](https://github.com/coe
 - Redux
 - Trivia API
 
-## Como Instalar e Rodar o Projeto
+## Como instalar e executar o projeto
 Para instalar e rodar este projeto localmente, siga os passos abaixo:
-- Clone o repositório: `git clone git@github.com:andhuangg/trivia-game.git`
+- Clone o repositório: `git@github.com:andhuangg/trivia-game.git`
 - Instale as dependências: `npm install`
 - Para rodar o projeto localmente: `npm start`
